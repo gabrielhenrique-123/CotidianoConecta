@@ -1,0 +1,431 @@
+\doxysection{User Class Reference}
+\hypertarget{classUser}{}\label{classUser}\index{User@{User}}
+
+
+Classe que representa um usuário genérico.  
+
+
+
+
+{\ttfamily \#include $<$usuario.\+hpp$>$}
+
+
+
+Collaboration diagram for User\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classUser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUser_a4a0137053e591fbb79d9057dd7d2283d}{User}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUser_a3997d90fbcfabdea257ff49940ea60c7}{User}} (string \mbox{\hyperlink{classUser_a643f85779a4693855c171c396f49e515}{name}}, string \mbox{\hyperlink{classUser_a7e40b2dd7368d75cea93fb80bcfa0bbd}{cpf}}, string \mbox{\hyperlink{classUser_aa072cfd5db1440f1c25579c75547e0ff}{birth}}, string \mbox{\hyperlink{classUser_a2d678acd22b533660b4b7d8404961f14}{email}})
+\begin{DoxyCompactList}\small\item\em Construtor que inicializa os membros com valores fornecidos. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classUser_ac00b72ad64eb4149f7b21b9f5468c2b2}{\texorpdfstring{$\sim$}{\string~}\+User}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_ab9b2b5feb6bdd1582696eb6d44cee384}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome do usuário. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_a9b0498ae834a440a8ec359703ce68f71}{get\+Number}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o número do usuário. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_a4c647e583bd964f40f687776a0d185dc}{get\+Email}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o email do usuário. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_a3116f686ba64ce144cb8d5dae05ad3f3}{get\+CPF}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o CPF do usuário. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_a54894ddc5dc8e571fcd167b130969e11}{get\+Funcao}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a função do usuário. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUser_aedd5259fa518794bf14c207c5e8b2fdd}{get\+Birth}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a data de nascimento do usuário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_acabf7e5a40909656de5bc631abe5588c}{set\+Name}} (string \mbox{\hyperlink{classUser_a643f85779a4693855c171c396f49e515}{name}})
+\begin{DoxyCompactList}\small\item\em Define o nome do usuário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_afc5041657367cb962bd581f4892d0de1}{set\+Number}} (string \mbox{\hyperlink{classUser_aa3bb305559c3513a928347ce30a4a716}{number}})
+\begin{DoxyCompactList}\small\item\em Define o número do usuário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a9d38dd7a9f5ca79cf17ecf572d42c647}{set\+Email}} (string \mbox{\hyperlink{classUser_a2d678acd22b533660b4b7d8404961f14}{email}})
+\begin{DoxyCompactList}\small\item\em Define o email do usuário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_ad01c453435cf69a7a2a762d2f9403a73}{set\+CPF}} (string \mbox{\hyperlink{classUser_a7e40b2dd7368d75cea93fb80bcfa0bbd}{cpf}})
+\begin{DoxyCompactList}\small\item\em Define o CPF do usuário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_abdc811665b3395a050fbf6cf26899ab2}{set\+Funcao}} (string \mbox{\hyperlink{classUser_a0a655bf1ec4cdb63c0c4d5932caefd26}{funcao}})
+\begin{DoxyCompactList}\small\item\em Define a função do usuário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a78733e1f3e8631d6449f65fb46b06bd7}{set\+Birth}} (string \mbox{\hyperlink{classUser_aa072cfd5db1440f1c25579c75547e0ff}{birth}})
+\begin{DoxyCompactList}\small\item\em Define a data de nascimento do usuário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_ac8a201055d02b313721e56c4c0f6af82}{show}} ()
+\begin{DoxyCompactList}\small\item\em Exibe as informações do usuário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a994f282b445fd7eceb7daa9b8787ab94}{save\+To\+File}} (const string \&filename) const
+\begin{DoxyCompactList}\small\item\em Salva as informações do usuário em um arquivo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUser_a2b151d814ff24f339c4e2c22af601ea7}{operator==}} (const \mbox{\hyperlink{classUser}{User}} \&) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de igualdade. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUser_a78184063f5f8320a84dcbb18dcbeaceb}{User}} (const \mbox{\hyperlink{classUser}{User}} \&)
+\begin{DoxyCompactList}\small\item\em Construtor de cópia da classe \doxylink{classUser}{User}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUser}{User}} \& \mbox{\hyperlink{classUser_a2b3a3b191b8f02c7bbb32f9bffca2436}{operator=}} (const \mbox{\hyperlink{classUser}{User}} \&)
+\begin{DoxyCompactList}\small\item\em Operador de atribuição da classe \doxylink{classUser}{User}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classUser_a643f85779a4693855c171c396f49e515}{name}}
+\item 
+string \mbox{\hyperlink{classUser_aa3bb305559c3513a928347ce30a4a716}{number}}
+\item 
+string \mbox{\hyperlink{classUser_aa072cfd5db1440f1c25579c75547e0ff}{birth}}
+\item 
+string \mbox{\hyperlink{classUser_a2d678acd22b533660b4b7d8404961f14}{email}}
+\item 
+string \mbox{\hyperlink{classUser_a7e40b2dd7368d75cea93fb80bcfa0bbd}{cpf}}
+\item 
+string \mbox{\hyperlink{classUser_a0a655bf1ec4cdb63c0c4d5932caefd26}{funcao}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa um usuário genérico. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classUser_a4a0137053e591fbb79d9057dd7d2283d}\label{classUser_a4a0137053e591fbb79d9057dd7d2283d} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor padrão. 
+
+Construtor padrão da classe \doxylink{classUser}{User}. \Hypertarget{classUser_a3997d90fbcfabdea257ff49940ea60c7}\label{classUser_a3997d90fbcfabdea257ff49940ea60c7} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{cpf,  }\item[{string}]{birth,  }\item[{string}]{email }\end{DoxyParamCaption})}
+
+
+
+Construtor que inicializa os membros com valores fornecidos. 
+
+Construtor que inicializa um objeto \doxylink{classUser}{User} com os dados fornecidos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Nome do usuário. \\
+\hline
+{\em cpf} & CPF do usuário. \\
+\hline
+{\em birth} & Data de nascimento do usuário. \\
+\hline
+{\em email} & Email do usuário. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_ac00b72ad64eb4149f7b21b9f5468c2b2}\label{classUser_ac00b72ad64eb4149f7b21b9f5468c2b2} 
+\index{User@{User}!````~User@{\texorpdfstring{$\sim$}{\string~}User}}
+\index{````~User@{\texorpdfstring{$\sim$}{\string~}User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}User()}{\string~User()}}
+{\footnotesize\ttfamily User\+::\texorpdfstring{$\sim$}{\string~}\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destrutor virtual. 
+
+Destrutor da classe \doxylink{classUser}{User}. \Hypertarget{classUser_a78184063f5f8320a84dcbb18dcbeaceb}\label{classUser_a78184063f5f8320a84dcbb18dcbeaceb} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classUser}{User}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Construtor de cópia da classe \doxylink{classUser}{User}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O usuário a ser copiado. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUser_aedd5259fa518794bf14c207c5e8b2fdd}\label{classUser_aedd5259fa518794bf14c207c5e8b2fdd} 
+\index{User@{User}!getBirth@{getBirth}}
+\index{getBirth@{getBirth}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getBirth()}{getBirth()}}
+{\footnotesize\ttfamily string User\+::get\+Birth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a data de nascimento do usuário. 
+
+\begin{DoxyReturn}{Returns}
+A data de nascimento do usuário. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a3116f686ba64ce144cb8d5dae05ad3f3}\label{classUser_a3116f686ba64ce144cb8d5dae05ad3f3} 
+\index{User@{User}!getCPF@{getCPF}}
+\index{getCPF@{getCPF}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getCPF()}{getCPF()}}
+{\footnotesize\ttfamily string User\+::get\+CPF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o CPF do usuário. 
+
+\begin{DoxyReturn}{Returns}
+O CPF do usuário. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a4c647e583bd964f40f687776a0d185dc}\label{classUser_a4c647e583bd964f40f687776a0d185dc} 
+\index{User@{User}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
+{\footnotesize\ttfamily string User\+::get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o email do usuário. 
+
+\begin{DoxyReturn}{Returns}
+O email do usuário. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a54894ddc5dc8e571fcd167b130969e11}\label{classUser_a54894ddc5dc8e571fcd167b130969e11} 
+\index{User@{User}!getFuncao@{getFuncao}}
+\index{getFuncao@{getFuncao}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getFuncao()}{getFuncao()}}
+{\footnotesize\ttfamily string User\+::get\+Funcao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a função do usuário. 
+
+\begin{DoxyReturn}{Returns}
+A função do usuário. 
+\end{DoxyReturn}
+\Hypertarget{classUser_ab9b2b5feb6bdd1582696eb6d44cee384}\label{classUser_ab9b2b5feb6bdd1582696eb6d44cee384} 
+\index{User@{User}!getName@{getName}}
+\index{getName@{getName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string User\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o nome do usuário. 
+
+\begin{DoxyReturn}{Returns}
+O nome do usuário. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a9b0498ae834a440a8ec359703ce68f71}\label{classUser_a9b0498ae834a440a8ec359703ce68f71} 
+\index{User@{User}!getNumber@{getNumber}}
+\index{getNumber@{getNumber}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getNumber()}{getNumber()}}
+{\footnotesize\ttfamily string User\+::get\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o número do usuário. 
+
+\begin{DoxyReturn}{Returns}
+O número do usuário. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a2b3a3b191b8f02c7bbb32f9bffca2436}\label{classUser_a2b3a3b191b8f02c7bbb32f9bffca2436} 
+\index{User@{User}!operator=@{operator=}}
+\index{operator=@{operator=}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUser}{User}} \& User\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classUser}{User}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Operador de atribuição da classe \doxylink{classUser}{User}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O usuário a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma referência para o objeto atual. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a2b151d814ff24f339c4e2c22af601ea7}\label{classUser_a2b151d814ff24f339c4e2c22af601ea7} 
+\index{User@{User}!operator==@{operator==}}
+\index{operator==@{operator==}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool User\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classUser}{User}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga do operador de igualdade. 
+
+Sobrecarga do operador de igualdade. Verifica se dois usuários são iguais.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & Usuário a ser comparado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se os usuários são iguais, false caso contrário.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & O usuário a ser comparado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se os usuários são iguais, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{classUser_a994f282b445fd7eceb7daa9b8787ab94}\label{classUser_a994f282b445fd7eceb7daa9b8787ab94} 
+\index{User@{User}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!User@{User}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily void User\+::save\+To\+File (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Salva as informações do usuário em um arquivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nome do arquivo onde as informações serão salvas.\\
+\hline
+{\em filename} & O nome do arquivo onde as informações serão salvas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_a78733e1f3e8631d6449f65fb46b06bd7}\label{classUser_a78733e1f3e8631d6449f65fb46b06bd7} 
+\index{User@{User}!setBirth@{setBirth}}
+\index{setBirth@{setBirth}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setBirth()}{setBirth()}}
+{\footnotesize\ttfamily void User\+::set\+Birth (\begin{DoxyParamCaption}\item[{string}]{birth }\end{DoxyParamCaption})}
+
+
+
+Define a data de nascimento do usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em birth} & A nova data de nascimento do usuário. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_ad01c453435cf69a7a2a762d2f9403a73}\label{classUser_ad01c453435cf69a7a2a762d2f9403a73} 
+\index{User@{User}!setCPF@{setCPF}}
+\index{setCPF@{setCPF}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setCPF()}{setCPF()}}
+{\footnotesize\ttfamily void User\+::set\+CPF (\begin{DoxyParamCaption}\item[{string}]{cpf }\end{DoxyParamCaption})}
+
+
+
+Define o CPF do usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & O novo CPF do usuário. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_a9d38dd7a9f5ca79cf17ecf572d42c647}\label{classUser_a9d38dd7a9f5ca79cf17ecf572d42c647} 
+\index{User@{User}!setEmail@{setEmail}}
+\index{setEmail@{setEmail}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setEmail()}{setEmail()}}
+{\footnotesize\ttfamily void User\+::set\+Email (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})}
+
+
+
+Define o email do usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & O novo email do usuário. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_abdc811665b3395a050fbf6cf26899ab2}\label{classUser_abdc811665b3395a050fbf6cf26899ab2} 
+\index{User@{User}!setFuncao@{setFuncao}}
+\index{setFuncao@{setFuncao}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setFuncao()}{setFuncao()}}
+{\footnotesize\ttfamily void User\+::set\+Funcao (\begin{DoxyParamCaption}\item[{string}]{funcao }\end{DoxyParamCaption})}
+
+
+
+Define a função do usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em funcao} & A nova função do usuário. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_acabf7e5a40909656de5bc631abe5588c}\label{classUser_acabf7e5a40909656de5bc631abe5588c} 
+\index{User@{User}!setName@{setName}}
+\index{setName@{setName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void User\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Define o nome do usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & O novo nome do usuário. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_afc5041657367cb962bd581f4892d0de1}\label{classUser_afc5041657367cb962bd581f4892d0de1} 
+\index{User@{User}!setNumber@{setNumber}}
+\index{setNumber@{setNumber}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setNumber()}{setNumber()}}
+{\footnotesize\ttfamily void User\+::set\+Number (\begin{DoxyParamCaption}\item[{string}]{number }\end{DoxyParamCaption})}
+
+
+
+Define o número do usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & O novo número do usuário. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classUser_ac8a201055d02b313721e56c4c0f6af82}\label{classUser_ac8a201055d02b313721e56c4c0f6af82} 
+\index{User@{User}!show@{show}}
+\index{show@{show}!User@{User}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void User\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exibe as informações do usuário. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classUser_aa072cfd5db1440f1c25579c75547e0ff}\label{classUser_aa072cfd5db1440f1c25579c75547e0ff} 
+\index{User@{User}!birth@{birth}}
+\index{birth@{birth}!User@{User}}
+\doxysubsubsection{\texorpdfstring{birth}{birth}}
+{\footnotesize\ttfamily string User\+::birth\hspace{0.3cm}{\ttfamily [protected]}}
+
+Data de nascimento do usuário \Hypertarget{classUser_a7e40b2dd7368d75cea93fb80bcfa0bbd}\label{classUser_a7e40b2dd7368d75cea93fb80bcfa0bbd} 
+\index{User@{User}!cpf@{cpf}}
+\index{cpf@{cpf}!User@{User}}
+\doxysubsubsection{\texorpdfstring{cpf}{cpf}}
+{\footnotesize\ttfamily string User\+::cpf\hspace{0.3cm}{\ttfamily [protected]}}
+
+CPF do usuário \Hypertarget{classUser_a2d678acd22b533660b4b7d8404961f14}\label{classUser_a2d678acd22b533660b4b7d8404961f14} 
+\index{User@{User}!email@{email}}
+\index{email@{email}!User@{User}}
+\doxysubsubsection{\texorpdfstring{email}{email}}
+{\footnotesize\ttfamily string User\+::email\hspace{0.3cm}{\ttfamily [protected]}}
+
+Email do usuário \Hypertarget{classUser_a0a655bf1ec4cdb63c0c4d5932caefd26}\label{classUser_a0a655bf1ec4cdb63c0c4d5932caefd26} 
+\index{User@{User}!funcao@{funcao}}
+\index{funcao@{funcao}!User@{User}}
+\doxysubsubsection{\texorpdfstring{funcao}{funcao}}
+{\footnotesize\ttfamily string User\+::funcao\hspace{0.3cm}{\ttfamily [protected]}}
+
+Função do usuário \Hypertarget{classUser_a643f85779a4693855c171c396f49e515}\label{classUser_a643f85779a4693855c171c396f49e515} 
+\index{User@{User}!name@{name}}
+\index{name@{name}!User@{User}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string User\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+Nome do usuário \Hypertarget{classUser_aa3bb305559c3513a928347ce30a4a716}\label{classUser_aa3bb305559c3513a928347ce30a4a716} 
+\index{User@{User}!number@{number}}
+\index{number@{number}!User@{User}}
+\doxysubsubsection{\texorpdfstring{number}{number}}
+{\footnotesize\ttfamily string User\+::number\hspace{0.3cm}{\ttfamily [protected]}}
+
+Número do usuário 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{usuario_8hpp}{usuario.\+hpp}}\item 
+src/\mbox{\hyperlink{usuario_8cpp}{usuario.\+cpp}}\end{DoxyCompactItemize}

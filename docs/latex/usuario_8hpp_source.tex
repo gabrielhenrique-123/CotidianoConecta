@@ -1,0 +1,59 @@
+\doxysection{usuario.\+hpp}
+\hypertarget{usuario_8hpp_source}{}\label{usuario_8hpp_source}\index{src/usuario.hpp@{src/usuario.hpp}}
+\mbox{\hyperlink{usuario_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_USUARIO\_HPP\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_USUARIO\_HPP\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUser}{User}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a643f85779a4693855c171c396f49e515}{name}};\ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_aa3bb305559c3513a928347ce30a4a716}{number}};\ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_aa072cfd5db1440f1c25579c75547e0ff}{birth}};\ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a2d678acd22b533660b4b7d8404961f14}{email}};\ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a7e40b2dd7368d75cea93fb80bcfa0bbd}{cpf}};\ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a0a655bf1ec4cdb63c0c4d5932caefd26}{funcao}};\ \ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classUser_a4a0137053e591fbb79d9057dd7d2283d}{User}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{classUser_a4a0137053e591fbb79d9057dd7d2283d}{User}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a643f85779a4693855c171c396f49e515}{name}},\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a7e40b2dd7368d75cea93fb80bcfa0bbd}{cpf}},\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_aa072cfd5db1440f1c25579c75547e0ff}{birth}},\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a2d678acd22b533660b4b7d8404961f14}{email}});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classUser_ac00b72ad64eb4149f7b21b9f5468c2b2}{\string~User}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Métodos\ de\ acesso\ (getters)}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_ab9b2b5feb6bdd1582696eb6d44cee384}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a9b0498ae834a440a8ec359703ce68f71}{getNumber}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a4c647e583bd964f40f687776a0d185dc}{getEmail}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a3116f686ba64ce144cb8d5dae05ad3f3}{getCPF}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a54894ddc5dc8e571fcd167b130969e11}{getFuncao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_aedd5259fa518794bf14c207c5e8b2fdd}{getBirth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ Métodos\ de\ modificação\ (setters)}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_acabf7e5a40909656de5bc631abe5588c}{setName}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a643f85779a4693855c171c396f49e515}{name}});}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_afc5041657367cb962bd581f4892d0de1}{setNumber}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_aa3bb305559c3513a928347ce30a4a716}{number}});}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_a9d38dd7a9f5ca79cf17ecf572d42c647}{setEmail}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a2d678acd22b533660b4b7d8404961f14}{email}});}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_ad01c453435cf69a7a2a762d2f9403a73}{setCPF}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a7e40b2dd7368d75cea93fb80bcfa0bbd}{cpf}});}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_abdc811665b3395a050fbf6cf26899ab2}{setFuncao}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_a0a655bf1ec4cdb63c0c4d5932caefd26}{funcao}});}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_a78733e1f3e8631d6449f65fb46b06bd7}{setBirth}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classUser_aa072cfd5db1440f1c25579c75547e0ff}{birth}});}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_ac8a201055d02b313721e56c4c0f6af82}{show}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUser_a994f282b445fd7eceb7daa9b8787ab94}{saveToFile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&filename)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUser_a2b151d814ff24f339c4e2c22af601ea7}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classUser}{User}}\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{//\ Construtor\ de\ cópia\ e\ operador\ de\ atribuição}}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{classUser_a4a0137053e591fbb79d9057dd7d2283d}{User}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classUser}{User}}\&);}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{classUser}{User}}\&\ \mbox{\hyperlink{classUser_a2b3a3b191b8f02c7bbb32f9bffca2436}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classUser}{User}}\&);}
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

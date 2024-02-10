@@ -1,11 +1,24 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "../usuario.hpp"
+#include "servicewindow.h"
+#include "userregwindow.h"
+#include "servicesearchwindow.h"
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QSqlDatabase bancoDeDados = QSqlDatabase::addDatabase("QSQLITE");
+    bancoDeDados.setDatabaseName("/home/gabriel/Documentos/Faculdade/4 Periodo/Engenharia de Software/Sprints em Grupo/Sprint 2/src/dataBank/users");
+
+    if(!bancoDeDados.open()){
+        ui->label->setText("Nao foi possivel abrir o banco de dados");
+    }
+    else{
+        ui->label->setText("O banco de dados foi aberto com sucesso");
+    }
 }
 
 MainWindow::~MainWindow()
@@ -13,11 +26,29 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_finish_clicked()
+void MainWindow::on_serviceRegButton_clicked()
 {
-    User* usuario = new User(ui->nameLine->text().toStdString(), ui->cpfLine->text().toStdString(), ui->birthLine->text().toStdString(), ui->emailLine->text().toStdString());
-    usuario->saveToFile("dataBank.txt");
+    serviceWindow *serviceWindowReg = new serviceWindow(this);
+    serviceWindowReg->show();
 
-    ui->feedback->setText("Sucess");
+    this->hide();
+}
+
+
+void MainWindow::on_userRegButton_clicked()
+{
+    userRegWindow *userWindowReg = new userRegWindow(this);
+    userWindowReg->show();
+
+    this->hide();
+}
+
+
+void MainWindow::on_serviceSearchButton_clicked()
+{
+    serviceSearchWindow *serviceSearch = new serviceSearchWindow(this);
+    serviceSearch->show();
+
+    this->hide();
 }
 
