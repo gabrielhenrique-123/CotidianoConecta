@@ -19,7 +19,8 @@ SOURCES += \
     servicesearchwindow.cpp \
     servicespacewindow.cpp \
     servicewindow.cpp \
-    userregwindow.cpp
+    userregwindow.cpp \
+    usersearchadminwindow.cpp
 
 HEADERS += \
     ../services.hpp \
@@ -31,7 +32,8 @@ HEADERS += \
     servicesearchwindow.h \
     servicespacewindow.h \
     servicewindow.h \
-    userregwindow.h
+    userregwindow.h \
+    usersearchadminwindow.h
 
 FORMS += \
     adminspacewindow.ui \
@@ -41,7 +43,8 @@ FORMS += \
     servicesearchwindow.ui \
     servicespacewindow.ui \
     servicewindow.ui \
-    userregwindow.ui
+    userregwindow.ui \
+    usersearchadminwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>547</width>
-    <height>538</height>
+    <width>450</width>
+    <height>457</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>60</y>
+     <x>60</x>
+     <y>20</y>
      <width>301</width>
      <height>391</height>
     </rect>
@@ -79,7 +79,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="passwordLine"/>
+      <widget class="QLineEdit" name="passwordLine">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -123,7 +127,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <rect>
       <x>10</x>
       <y>290</y>
-      <width>131</width>
+      <width>291</width>
       <height>17</height>
      </rect>
     </property>

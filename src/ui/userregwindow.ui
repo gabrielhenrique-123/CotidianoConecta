@@ -75,19 +75,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string>Finish</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>480</y>
-       <width>231</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
     <widget class="QLineEdit" name="cpfLine">
      <property name="geometry">
       <rect>
@@ -140,7 +127,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string>Type your password</string>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>40</x>

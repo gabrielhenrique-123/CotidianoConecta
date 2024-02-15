@@ -18,6 +18,8 @@ public:
 private slots:
     void on_serviceSearchButton_clicked();
 
+    void on_serviceSearchButton_2_clicked();
+
 private:
     Ui::adminSpaceWindow *ui;
 };
