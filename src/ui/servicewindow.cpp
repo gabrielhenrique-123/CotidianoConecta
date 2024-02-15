@@ -7,16 +7,6 @@ serviceWindow::serviceWindow(QWidget *parent)
     , ui(new Ui::serviceWindow)
 {
     ui->setupUi(this);
-
-    QSqlDatabase bancoDeDados = QSqlDatabase::addDatabase("QSQLITE");
-    bancoDeDados.setDatabaseName("/home/gabriel/Documentos/Faculdade/4 Periodo/Engenharia de Software/Sprints em Grupo/Sprint 2/src/dataBank/users");
-
-    if(!bancoDeDados.open()){
-        ui->label->setText("Nao foi possivel abrir o banco de dados");
-    }
-    else{
-        ui->label->setText("O banco de dados foi aberto com sucesso");
-    }
 }
 
 serviceWindow::~serviceWindow()

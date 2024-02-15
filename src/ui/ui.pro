@@ -11,23 +11,35 @@ CONFIG += c++17
 SOURCES += \
     ../services.cpp \
     ../usuario.cpp \
+    adminspacewindow.cpp \
+    loginwindow.cpp \
     main.cpp \
     mainwindow.cpp \
+    servicesearchadminwindow.cpp \
     servicesearchwindow.cpp \
+    servicespacewindow.cpp \
     servicewindow.cpp \
     userregwindow.cpp
 
 HEADERS += \
     ../services.hpp \
     ../usuario.hpp \
+    adminspacewindow.h \
+    loginwindow.h \
     mainwindow.h \
+    servicesearchadminwindow.h \
     servicesearchwindow.h \
+    servicespacewindow.h \
     servicewindow.h \
     userregwindow.h
 
 FORMS += \
+    adminspacewindow.ui \
+    loginwindow.ui \
     mainwindow.ui \
+    servicesearchadminwindow.ui \
     servicesearchwindow.ui \
+    servicespacewindow.ui \
     servicewindow.ui \
     userregwindow.ui
 
