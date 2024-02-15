@@ -15,6 +15,9 @@ public:
     explicit serviceSearchWindow(QWidget *parent = nullptr);
     ~serviceSearchWindow();
 
+private slots:
+    void on_pushButton_4_clicked();
+
 private:
     Ui::serviceSearchWindow *ui;
 };

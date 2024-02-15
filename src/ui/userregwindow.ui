@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>639</width>
+    <height>603</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>100</x>
       <y>20</y>
       <width>421</width>
       <height>531</height>
@@ -75,19 +75,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string>Finish</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>430</y>
-       <width>231</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
     <widget class="QLineEdit" name="cpfLine">
      <property name="geometry">
       <rect>
@@ -140,6 +127,32 @@ li.checked::marker { content: &quot;\2612&quot;; }
       <string>Type your password</string>
      </property>
     </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>390</y>
+       <width>138</width>
+       <height>54</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="commomButton">
+        <property name="text">
+         <string>Commom user</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="serviceButton">
+        <property name="text">
+         <string>Service Provider</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -147,7 +160,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>639</width>
      <height>22</height>
     </rect>
    </property>

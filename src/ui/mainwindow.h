@@ -16,9 +16,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_serviceRegButton_clicked();
-
-    void on_userRegButton_clicked();
 
     void on_serviceSearchButton_clicked();
 
